@@ -79,7 +79,7 @@ public class EnemyController : MonoBehaviour
         isDead = false;
         isRetreating = false;
         isAlerting = false;
-        audioSource = GetComponent<AudioSource>();
+       // audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -192,7 +192,7 @@ public class EnemyController : MonoBehaviour
             currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
         }
 
-        PlayFootstepSound();
+       // PlayFootstepSound();
     }
 
     // Chasing behavior
@@ -269,11 +269,11 @@ public class EnemyController : MonoBehaviour
     }
 
     // Play footstep sounds while patrolling
-    private void PlayFootstepSound()
-    {
-        if (footstepSound != null && !audioSource.isPlaying)
-        {
-            audioSource.PlayOneShot(footstepSound);
-        }
-    }
+    //private void PlayFootstepSound()
+    //{
+    //    if (footstepSound != null && !audioSource.isPlaying)
+    //    {
+    //        audioSource.PlayOneShot(footstepSound);
+    //    }
+    //}
 }
