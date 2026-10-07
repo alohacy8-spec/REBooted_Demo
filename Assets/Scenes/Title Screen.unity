@@ -1381,7 +1381,6 @@ GameObject:
   - component: {fileID: 1262235912}
   - component: {fileID: 1262235911}
   - component: {fileID: 1262235910}
-  - component: {fileID: 1262235909}
   - component: {fileID: 1262235913}
   m_Layer: 5
   m_Name: Settings
@@ -1412,18 +1411,6 @@ RectTransform:
   m_AnchoredPosition: {x: 43, y: -171}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1262235909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262235907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e3912e2d36cc9e449d3e6579df22a2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MainMenu
 --- !u!114 &1262235910
 MonoBehaviour:
   m_ObjectHideFlags: 0
