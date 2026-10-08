@@ -59,10 +59,10 @@ public class EnemyController : MonoBehaviour
     public Transform[] patrolPoints;
     private int currentPatrolIndex;
 
-    [Header("Sound and Visuals")]
-    [Tooltip("Footstep sound clip to play during patrolling.")]
-    public AudioClip footstepSound;
-    private AudioSource audioSource;
+    //[Header("Sound and Visuals")]
+    //[Tooltip("Footstep sound clip to play during patrolling.")]
+    //public AudioClip footstepSound;
+    //private AudioSource audioSource;
 
     private float lastAttackTime;
     private Transform player;
