@@ -15,10 +15,11 @@ namespace Player {
         public LayerMask groundLayer;
 
         // number of times character can jump in air:
-        private int canJump = 2;
+        private int canJump = 3;
         private bool canMove = true;
         private bool facingRight = true;
         private bool isGrounded;
+        private float idleTimer = 0f;
 
         private Rigidbody2D rb;
         private Animator animate;
@@ -30,7 +31,7 @@ namespace Player {
         InputAction sprintAction;
         InputAction crouchAction;
         InputAction blockAction;
-        InputAction attackAction;
+        // InputAction attackAction;
 
         public void Awake() {
             controls = new InputSystem_Actions();
@@ -65,6 +66,12 @@ namespace Player {
                     Flip();
                 } else if (moveInput.x < 0 && facingRight) {
                     Flip();
+                }
+                // Sprint: 
+                if (sprintAction.IsPressed() && moveInput.x != 0f) {
+                    animate.speed = 2f;
+                } else {
+                    animate.speed = 1f;
                 }
             }
             // ACTIONS: 
@@ -101,7 +108,7 @@ namespace Player {
         public void FixedUpdate() {
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
             if (isGrounded) { 
-                canJump = 2;
+                canJump = 3;
                 animate.SetBool("isJumping", false); 
             }
         }

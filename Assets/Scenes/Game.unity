@@ -361,7 +361,7 @@ Transform:
   m_GameObject: {fileID: 174131495}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -13.866666, z: 0}
+  m_LocalPosition: {x: -0.46, y: -3.773, z: 0}
   m_LocalScale: {x: 6.6666665, y: 6.6666665, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -493,6 +493,7 @@ GameObject:
   - component: {fileID: 1196762173}
   - component: {fileID: 1196762174}
   - component: {fileID: 1196762172}
+  - component: {fileID: 1196762175}
   m_Layer: 0
   m_Name: ReB_SPR_EX
   m_TagString: Untagged
@@ -571,7 +572,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7325247254693695536, guid: 093570b973a5d2e4383ef62c8a523878, type: 3}
+  m_Sprite: {fileID: -3901945190235102999, guid: 7fbe4d18c85b62f47beda7a61660a5d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -592,7 +593,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.45, y: -1.45, z: 0}
-  m_LocalScale: {x: 0.12, y: 0.12, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 174131496}
@@ -636,13 +637,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 17.930002, y: 28.290003}
+    oldSize: {x: 4.81, y: 7.6605687}
     newSize: {x: 17.930002, y: 28.290003}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 17.930002, y: 28.290003}
+  m_Size: {x: 4.81, y: 7.6605687}
   m_EdgeRadius: 0
 --- !u!114 &1196762173
 MonoBehaviour:
@@ -692,6 +693,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1196762175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196762168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5bfd68ab91d9341b9c24f9a4905047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player.AttackController
 --- !u!1 &2084088888
 GameObject:
   m_ObjectHideFlags: 0
