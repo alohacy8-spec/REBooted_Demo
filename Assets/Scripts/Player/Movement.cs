@@ -1,14 +1,18 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-// https://youtu.be/lIZnIFqai2I
+// https://youtu.be/lIZnIFqai2I (colliders)
 // https://youtu.be/4vLYoFWV5lk
 namespace Player {
     public class Movement : MonoBehaviour {
         public string myName = "EX";
         public float moveSpeed = 10f;
-        public float jumpForce = 20f;
         public float dashPercentage = 2f;
+
+        // Jumping:
+        public float jumpForce = 20f;
+        public float fallDelay = 0.1f;
+        private float jumpTimer = 0f;
 
         public Transform groundCheck;
         public float groundCheckRadius = 0.2f;
@@ -19,7 +23,6 @@ namespace Player {
         private bool canMove = true;
         private bool facingRight = true;
         private bool isGrounded;
-        private float idleTimer = 0f;
 
         private Rigidbody2D rb;
         private Animator animate;
@@ -60,7 +63,6 @@ namespace Player {
                 moveInput = controls.Player.Move.ReadValue<Vector2>();
                 rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
                 animate.SetBool("isRunning", moveInput.x != 0f);
-                
                 // Check direction:
                 if (moveInput.x > 0 && !facingRight) {
                     Flip();
@@ -78,6 +80,9 @@ namespace Player {
             if (jumpAction.WasPressedThisFrame()) { Jump(); }
             if (jumpAction.WasReleasedThisFrame() && rb.linearVelocity.y > 0) { Shortjump(); }
             if (sprintAction.IsPressed()) { Sprint(); }
+            if (rb.linearVelocity.y < -0.01f || jumpTimer > 0f) {
+                Fall();
+            }
             // var moveDirection = moveAction.ReadValue<Vector2>();
             // position += moveDirection * moveSpeed * Time.deltaTime;
         }
@@ -87,10 +92,25 @@ namespace Player {
         }
 
         public void Jump() {
-            if (canJump > 1) {
+            if (canJump > 1 && jumpTimer > 0f || jumpTimer == -0.1f) {
                 canJump--;
+                animate.SetBool("isJumping", false);
+                animate.SetBool("isFalling", true);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            } else if (canJump > 1) {
+                canJump--;
+                jumpTimer = Time.time + fallDelay;
+                animate.SetBool("isFalling", false);
                 animate.SetBool("isJumping", true);
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            }
+        }
+
+        public void Fall() {
+            if (!isGrounded && Time.time >= jumpTimer) {
+                animate.SetBool("isJumping", false);
+                animate.SetBool("isFalling", true);
+                jumpTimer = -0.1f; 
             }
         }
 
@@ -107,8 +127,10 @@ namespace Player {
 
         public void FixedUpdate() {
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-            if (isGrounded) { 
-                canJump = 3;
+            if (isGrounded) {
+                canJump = 2;
+                jumpTimer = 0f; 
+                animate.SetBool("isFalling", false);
                 animate.SetBool("isJumping", false); 
             }
         }
