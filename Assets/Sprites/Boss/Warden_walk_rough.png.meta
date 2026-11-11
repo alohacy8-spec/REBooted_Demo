@@ -1,0 +1,405 @@
+fileFormatVersion: 2
+guid: 87d425e41cd74de428590629de45f6a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9083679554180144282
+    second: Warden_walk_rough_0
+  - first:
+      213: 6608274460655996034
+    second: Warden_walk_rough_1
+  - first:
+      213: 7803564956711760254
+    second: Warden_walk_rough_2
+  - first:
+      213: -1895330957782364657
+    second: Warden_walk_rough_3
+  - first:
+      213: 5917822282412974343
+    second: Warden_walk_rough_4
+  - first:
+      213: -6377638136822066729
+    second: Warden_walk_rough_5
+  - first:
+      213: 1462915112430467115
+    second: Warden_walk_rough_6
+  - first:
+      213: 4257455581238776801
+    second: Warden_walk_rough_7
+  - first:
+      213: -6783708756787562615
+    second: Warden_walk_rough_8
+  - first:
+      213: -5723612525173082563
+    second: Warden_walk_rough_9
+  - first:
+      213: -5462074788664335137
+    second: Warden_walk_rough_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Warden_walk_rough_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 13
+        width: 1191
+        height: 976
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cd2685d66bf0e70800000000000000
+      internalID: 9083679554180144282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warden_walk_rough_1
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 0
+        width: 1470
+        height: 915
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ccfad1c9e45bb50800000000000000
+      internalID: 6608274460655996034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warden_walk_rough_2
+      rect:
+        serializedVersion: 2
+        x: 3225
+        y: 15
+        width: 1036
+        height: 953
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71bd7aabf4db4c60800000000000000
+      internalID: 7803564956711760254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warden_walk_rough_3
+      rect:
+        serializedVersion: 2
+        x: 4708
+        y: 912
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ec499298e62b5e0800000000000000
+      internalID: -1895330957782364657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warden_walk_rough_4
+      rect:
+        serializedVersion: 2
+        x: 4718
+        y: 14
+        width: 1055
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701ed1b0304502250800000000000000
+      internalID: 5917822282412974343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warden_walk_rough_5
+      rect:
+        serializedVersion: 2
+        x: 6185
+        y: 11
+        width: 962
+        height: 957
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d19cbc97e31e77a0800000000000000
+      internalID: -6377638136822066729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warden_walk_rough_6
+      rect:
+        serializedVersion: 2
+        x: 7629
+        y: 8
+        width: 792
+        height: 907
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28f7fc3b815d4410800000000000000
+      internalID: 1462915112430467115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warden_walk_rough_7
+      rect:
+        serializedVersion: 2
+        x: 9036
+        y: 9
+        width: 851
+        height: 959
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3ddbe4b45851b30800000000000000
+      internalID: 4257455581238776801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warden_walk_rough_8
+      rect:
+        serializedVersion: 2
+        x: 10319
+        y: 11
+        width: 1131
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98778fbc3dc6bd1a0800000000000000
+      internalID: -6783708756787562615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warden_walk_rough_9
+      rect:
+        serializedVersion: 2
+        x: 6175
+        y: 878
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36f41dbbb4a190b0800000000000000
+      internalID: -5723612525173082563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warden_walk_rough_10
+      rect:
+        serializedVersion: 2
+        x: 7640
+        y: 806
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4ab054befc234b0800000000000000
+      internalID: -5462074788664335137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Warden_walk_rough_0: 9083679554180144282
+      Warden_walk_rough_1: 6608274460655996034
+      Warden_walk_rough_10: -5462074788664335137
+      Warden_walk_rough_2: 7803564956711760254
+      Warden_walk_rough_3: -1895330957782364657
+      Warden_walk_rough_4: 5917822282412974343
+      Warden_walk_rough_5: -6377638136822066729
+      Warden_walk_rough_6: 1462915112430467115
+      Warden_walk_rough_7: 4257455581238776801
+      Warden_walk_rough_8: -6783708756787562615
+      Warden_walk_rough_9: -5723612525173082563
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
